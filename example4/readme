@@ -1,0 +1,22 @@
+Steps:
+
+
+Activate the virtual environment - 
+.\venv\Scripts\activate
+(this needs to be done in the client terminal and the server terminal)
+
+In one terminal, run - 
+python http_server.py
+
+In the other - 
+python client.py
+
+
+Explanation:
+
+We are now registering our devices to be used for computation.
+
+Important note:
+Here I have a client and server, but this is looking at it from the other end as the previous three examples. In my case, a client is a device that wishes to sign up to donate its computation. The http server is a registration device. So in a sense:
+client (example4) = server (example3)
+server (example4) = load balancer (example3)

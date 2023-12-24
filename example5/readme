@@ -1,0 +1,13 @@
+Steps: 
+
+Go to stytch.com and sign up.
+Grab a project ID and secret from settings and put them in a .env file as STYTCH_PROJECT_ID and STYTCH_SECRET
+
+Run -
+python app.py
+
+
+Explanation:
+
+We don't want just anyone registering their device in our app. There should be a login feature to ensure it's a trusted user. Here we use Stytch, an Authentication-as-a-Service provider, to set up magic links and SMS OTPs.
+The actual site isn't really set up for this example, but it's easy to imagine combining it with example 3 or 4.

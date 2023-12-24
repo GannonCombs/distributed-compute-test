@@ -1,0 +1,24 @@
+Steps:
+
+
+Run -
+python load_balancer.py
+
+Then set up a few servers (try random port numbers) -
+python server.py 10001
+python server.py 10008
+python server.py 10005
+
+Then run -
+python client.py
+
+Try randomly adding or removing servers as you use the client. It should handle this fine.
+
+
+Explanation:
+
+This example shows dynamic server discovery. Instead of using a static list of server ports, the load balancer will discover available servers at runtime. Servers will register themselves with the load balancer when they start, and unregister when they shut down.
+
+Services that (supposedly) offer this:
+
+Apache Zookeeper, etcd, or Consul.

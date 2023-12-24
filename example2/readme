@@ -1,0 +1,14 @@
+Steps:
+
+In 3 separate terminals run - 
+python server.py 10001
+python server.py 10002
+python server.py 10003
+
+Run python load_balancer.py
+Run python client.py
+Enter integers one by one and press Enter.
+
+
+Explanation:
+This example gets a little more interesting. What if we want to send our data to multiple servers to compute? Here we load 3 identical servers. We also create a load balancer, which takes the data from client, and passes it round robin style across the 3 servers. We also add some code to Ctrl+C out of the servers and load balancer.
